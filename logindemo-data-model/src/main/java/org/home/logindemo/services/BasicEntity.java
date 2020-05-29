@@ -1,4 +1,5 @@
-package org.home.logindemo.login;
+package org.home.logindemo.services;
+
 
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
