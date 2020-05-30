@@ -15,3 +15,8 @@ repositories {
 bootJar {
     mainClassName = 'org.home.logindemo.services.LoginDemoApplication'
 }
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+}
