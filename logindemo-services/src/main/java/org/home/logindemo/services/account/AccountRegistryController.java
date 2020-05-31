@@ -2,10 +2,7 @@ package org.home.logindemo.services.account;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -20,6 +17,11 @@ class AccountRegistryController {
     ResponseEntity registerAccount(@Valid @RequestBody AccountRegistryDto accountRegistryDto) {
         accountService.registerAccount(accountRegistryDto);
         return ResponseEntity.ok("Account successfully registered.");
+    }
+
+    @GetMapping
+    ResponseEntity sayHello() {
+        return ResponseEntity.ok("Hello");
     }
 
 }

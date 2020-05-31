@@ -1,3 +1,14 @@
-<div>
-  user registry app
-</div>
+<h2>Register your account</h2>
+<form [formGroup]="accountRegistryForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="usernameId">username: </label>
+    <input id="usernameId" type="text" formControlName="username">
+  </div>
+  <div>
+    <label for="passwordId">password: </label>
+    <input id="passwordId" type="text" formControlName="password">
+  </div>
+  <div>
+    <button>Register</button>
+  </div>
+</form>
